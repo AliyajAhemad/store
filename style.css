@@ -117,6 +117,7 @@ button:hover {
     .product-item {
         width: calc(50% - 20px);
     }
+    
 }
 @media (min-width: 992px) {
     .product-item {
@@ -126,6 +127,19 @@ button:hover {
 @media (min-width: 1200px) {
     .product-item {
         width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .navbar-brand{
+        margin-left: 20px;
+    }
+    .product-section{
+        margin-top: 10px;
     }
 }
 
