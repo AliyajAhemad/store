@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section{
+    padding-top: 50px;
+}
+
+body {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    
+}
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+	/* padding: 10px; */
+}
+
+.product-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.product-item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 230px;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.product-item:hover {
+    transform: translateY(-5px);
+}
+.product-image-container {
+    text-align: center;
+}
+.product-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.product-info {
+    text-align: left;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+.product-description {
+    margin: 0;
+    max-height: 5.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+.product-price {
+    font-size: 16px;
+    color: #333;
+}
+.discounted-price {
+    font-weight: bold;
+    color: #28a745;
+}
+.actual-price {
+    text-decoration: line-through;
+    color: #dc3545;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.actual-price:before,
+.discounted-price:before {
+    content: "₹";
+}
+.product-brand {
+    color: #007bff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.product-button-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    text-align: center;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 1px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 110px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px);
+    }
+}
+@media (min-width: 992px) {
+    .product-item {
+        width: calc(33.33% - 20px);
+    }
+}
+@media (min-width: 1200px) {
+    .product-item {
+        width: calc(25% - 20px);
+    }
+}
+
+
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Padding inside footer */
+}
+
+.footer-social-icons a {
+    color: #ffffff; /* White color for social icons */
+    margin: 0 10px; /* Margin between icons */
+    font-size: 24px; /* Icon size */
+}
+
+.footer-social-icons a:hover {
+    color: #ced4da; /* Hover color for social icons */
+    text-decoration: none; /* Remove underline on hover */
+}

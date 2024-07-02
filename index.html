@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deals Delight - Levis Collection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #f8f9fa; /* Light gray background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0; /* Padding top and bottom */
+            border:none;
+        }
+        .navbar-brand {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #007bff; /* Blue color */
+            margin-left: 20px;
+        }
+        .input-group {
+            flex-grow: 1;
+            max-width: 500px;
+            margin-left: auto;
+            border-radius: 20px; /* Rounded corners */
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border:none;
+            
+        }
+        .form-control {
+            border: none;
+            box-shadow: none;
+        }
+        .input-group-text {
+            background-color: #007bff; /* Blue background */
+            border: none;
+            color: #fff; /* White text */
+            cursor: pointer;
+        }
+        .input-group-text i {
+            font-size: 1.2rem;
+        }
+        .input-group:focus-within {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus outline */
+        }
+        @media (max-width: 768px) {
+            .input-group {
+                max-width: 90%;
+                margin: 10px auto;
+            }
+            .navbar-brand{
+                margin-left: 20px;
+            }
+        }
+
+        .brand-heading {
+            font-size: 1.25rem; /* Smaller font size */
+            font-weight: 500;
+            /*text-align: center;*/
+            margin-bottom: 0px !important;
+            color: #495057; /* Darker gray color */
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 1.5px; /* Letter spacing */
+           /* background: linear-gradient(to right, #f8f9fa, #e9ecef);*/
+            padding: 7px;
+            border-radius: 10px;
+            /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            display: inline-block; /* Make the background fit the text */
+        }
+        .catogory{
+            margin: 20px 0;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+   <!-- Header -->
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AtleastLook</a>
+            <div class="input-group">
+                <input class="form-control" id="search-input" type="search" placeholder="Search for brand" aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar
+    <div class="container my-4 pt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group">
+                    <input class="form-control" id="search-input" type="search" placeholder="Search for products"
+                        aria-label="Search">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Main Content -->
+    <div class="container-fluid my-5 main-section">
+        <div class="row">
+            <!-- Product Section -->
+            <section class="col-lg-9">
+                <div class=" catogory">
+                    <!-- Levis Collection Heading -->
+                    <h4 class="brand-heading">Levis</h4>
+
+                    <!-- Product Carousel -->
+                    <div class="product-carousel">
+                        <!-- Product Items -->
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic1.jpg">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-description">Product description goes here. This is a test paragraph.
+                                    It should appear with consistent font, spacing, and colors across different devices
+                                    and browsers.</p>
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Levis</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic2.jpg">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-description">Product description goes here. This is a test paragraph.
+                                    It should appear with consistent font, spacing, and colors across different devices
+                                    and browsers.</p>
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Levis</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic3.jpg">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-description">This is a test paragraph. It should appear with
+                                    consistent font, spacing, and colors across different devices and browsers.</p>
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Demo Name</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic4.jpg">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-description">This is a test paragraph. It should appear with
+                                    consistent font, spacing, and colors across different devices and browsers.</p>
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Demo Name</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic5.jpg">
+                            </div>
+                            <div class="product-info">
+                                <p class="product-description">This is a test paragraph. It should appear with
+                                    consistent font, spacing, and colors across different devices and browsers.</p>
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Demo Name</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div  style="width: 100%; overflow-x: hidden; text-align: center;">
+                    <div class="card horizontal-ade" style="display: inline-block; width: 90%; max-width: 1000px;">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3205827759062764"
+                            crossorigin="anonymous"></script>
+                        <!-- Brand divider ad 1 -->
+                        <ins class="adsbygoogle"
+                            style="display:block; width: 100%; height: 100px;"
+                            data-ad-client="ca-pub-3205827759062764"
+                            data-ad-slot="1106767062"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+                
+                
+                <div class=" catogory">
+                    <!-- Levis Collection Heading -->
+                    <h2 class=" brand-heading ">Allen Solly</h2>
+
+                    <!-- Product Carousel -->
+                    <div class="product-carousel">
+                        <!-- Product Items -->
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic6.jpg">
+                            </div>
+                            <div class="product-info">
+                                <!-- <p class="product-description">Product description goes here. This is a test paragraph.
+                                    It should appear with consistent font, spacing, and colors across different devices
+                                    and browsers.</p> -->
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Levis</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic7.jpg">
+                            </div>
+                            <div class="product-info">
+                                <!-- <p class="product-description">Product description goes here. This is a test paragraph.
+                                    It should appear with consistent font, spacing, and colors across different devices
+                                    and browsers.</p> -->
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Levis</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="img/pic8.jpg">
+                            </div>
+                            <div class="product-info">
+                                <!-- <p class="product-description">Product description goes here. This is a test paragraph.
+                                    It should appear with consistent font, spacing, and colors across different devices
+                                    and browsers.</p> -->
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Levis</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="https://via.placeholder.com/150">
+                            </div>
+                            <div class="product-info">
+                                <!-- <p class="product-description">This is a test paragraph. It should appear with
+                                    consistent font, spacing, and colors across different devices and browsers.</p> -->
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Demo Name</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="https://via.placeholder.com/150">
+                            </div>
+                            <div class="product-info">
+                                <!-- <p class="product-description">This is a test paragraph. It should appear with
+                                    consistent font, spacing, and colors across different devices and browsers.</p> -->
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Demo Name</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-image-container">
+                                <img class="product-image" src="https://via.placeholder.com/150">
+                            </div>
+                            <div class="product-info">
+                                <!-- <p class="product-description">This is a test paragraph. It should appear with
+                                    consistent font, spacing, and colors across different devices and browsers.</p> -->
+                                <div class="product-price">
+                                    <span class="discounted-price">700</span>
+                                    <span class="actual-price">1200</span>
+                                </div>
+                                <h3 class="product-brand">Demo Name</h3>
+                                <div class="product-button-container">
+                                    <button><i class="fab fa-amazon"></i> Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Aside Section with Google Ads -->
+             <section class="col-lg-3">
+                <aside class="d-none d-lg-block">
+                    <div>
+                        <div class="card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Ads Section</h5>
+                                <!-- Google Ads Code -->
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3205827759062764"
+                                crossorigin="anonymous"></script>
+                                <!-- Aside Add 1 -->
+                                <ins class="adsbygoogle"
+                                        style="display:block"
+                                        data-ad-client="ca-pub-3205827759062764"
+                                        data-ad-slot="2477071947"
+                                        data-ad-format="auto"
+                                        data-full-width-responsive="true"></ins>
+                                <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                                <!-- End Google Ads Code -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <div class="footer-social-icons mb-3">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://telegram.me/" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <span class="text-muted">&copy; 2024 Deals Delight. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        // Function to dynamically load ads after every three product items
+        function loadAdsAfterProducts() {
+            var productItems = document.querySelectorAll('.product-item');
+
+            // Calculate the number of ads needed
+            var numberOfAds = Math.floor(productItems.length);
+
+            // Insert ads after every three product items
+            for (var i = 1; i <= numberOfAds; i++) {
+                var adIndex = i * 3 - 1; // Calculate the index where ad should be inserted (1-based index)
+
+                // Example ad unit ID and slot number (replace with your actual ad unit ID and slot number)
+                var adUnitID = 'XXXXXXXXXX';
+                var adSlotNumber = i; // Example: Dynamic slot number based on ad index
+
+                // Create ad container
+                var adContainer = document.createElement('div');
+                adContainer.className = 'product-item ad-item';
+
+                // Create ad unit
+                var adUnit = document.createElement('ins');
+                adUnit.className = 'adsbygoogle';
+                adUnit.style.display = 'block';
+                adUnit.setAttribute('data-ad-client', adUnitID);
+                adUnit.setAttribute('data-ad-slot', adSlotNumber);
+                adUnit.setAttribute('data-ad-format', 'auto');
+                adUnit.setAttribute('data-full-width-responsive', 'true');
+
+                // Append ad unit to ad container
+                adContainer.appendChild(adUnit);
+
+                // Insert ad container after the specified product item index
+                productItems[adIndex].parentNode.insertBefore(adContainer, productItems[adIndex].nextSibling);
+            }
+
+            // Push to adsbygoogle queue
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+
+        // Load Google Ads when the page is fully loaded
+        //document.addEventListener('DOMContentLoaded', loadAdsAfterProducts);
+
+    </script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
