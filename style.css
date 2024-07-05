@@ -61,6 +61,7 @@ body {
     padding: 0 10px;
 }
 .product-description {
+    font-size: 12px;
     margin: 0;
     max-height: 5.6em;
     overflow: hidden;
@@ -74,7 +75,7 @@ body {
 }
 .discounted-price {
     font-weight: bold;
-    color: #28a745;
+    color: #49a959;
 }
 .actual-price {
     text-decoration: line-through;
@@ -157,6 +158,191 @@ button:hover {
 }
 
 .footer-social-icons a:hover {
-    color: #ced4da; /* Hover color for social icons */
-    text-decoration: none; /* Remove underline on hover */
+    color: #ced4da; 
+    text-decoration: none; 
 }
+
+
+.custom-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.custom-card-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.custom-card-body {
+    padding: 5px;
+}
+
+.custom-product-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* .custom-product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+} */
+
+.custom-product-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px; 
+    overflow: hidden;
+}
+
+.custom-product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* .custom-product-card:hover .custom-product-image {
+    transform: scale(1.05);
+} */
+
+.custom-product-info {
+    padding: 12px; 
+    text-align: center;
+}
+
+.custom-brand-heading {
+    font-size: 1rem; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.custom-brand-heading i {
+    margin-right: 5px;
+    color: #f39c12;
+}
+
+.custom-product-price {
+    font-size: 1rem; 
+    color: #333;
+}
+
+.custom-discounted-price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.custom-actual-price {
+    text-decoration: line-through;
+    color: #95a5a6;
+    font-size: 0.9rem; 
+    margin-left: 5px;
+}
+
+.custom-card-title {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.custom-ad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .custom-product-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-product-image-container {
+        height: 200px; 
+    }
+
+    .custom-product-info {
+        width: 100%;
+    }
+
+    .custom-ad-container {
+        height: auto;
+    }
+}
+
+
+/* product options section */
+.product-options {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    /* background-color: #f2f2f2;  */
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+}
+
+.product-options {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    background-color: #ffffff; /* White background */
+    padding: 5px; /* Reduced padding */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 100%; /* Ensure it doesn't overflow horizontally */
+}
+
+.product-options .option {
+    display: inline-flex; /* Ensures each option stays on a single line */
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Dark gray text */
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+    padding: 8px 12px; /* Adjusted padding */
+    border-radius: 10px; /* Rounded corners */
+    margin-right: 8px; /* Space between options */
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f2f2f2; /* Light gray on hover */
+
+}
+
+.product-options .option:hover {
+    background-color: #d5cfcf; /* Light gray on hover */
+    color: #282626; /* Dark gray text on hover */
+}
+
+.product-options .option:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.75); /* Custom focus outline */
+}
+/* 
+@media screen and (max-width: 600px) {
+    .product-options {
+        flex-wrap: nowrap; 
+    }
+} */
+
