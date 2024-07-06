@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+        var path = window.location.pathname;
+        if (path === '/store/pants') {
+            window.location.href = '/store/pants.html';
+        } else if (path === '/store/shirts') {
+            window.location.href = '/store/shirts.html';
+        } else if (path === '/store/temp') {
+            window.location.href = '/store/temp.html';
+        } else {
+            document.write("Page not found.");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

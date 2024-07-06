@@ -196,11 +196,6 @@ button:hover {
     position: relative;
 }
 
-/* .custom-product-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-} */
-
 .custom-product-image-container {
     display: flex;
     align-items: center;
@@ -216,10 +211,6 @@ button:hover {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
-/* .custom-product-card:hover .custom-product-image {
-    transform: scale(1.05);
-} */
 
 .custom-product-info {
     padding: 12px; 
@@ -294,55 +285,47 @@ button:hover {
 }
 
 
-/* product options section */
 .product-options {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; 
     align-items: center;
-    /* background-color: #f2f2f2;  */
     padding: 20px;
     border-radius: 15px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
 }
 
 .product-options {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    background-color: #ffffff; /* White background */
-    padding: 5px; /* Reduced padding */
-    border-radius: 8px; /* Rounded corners */
-    max-width: 100%; /* Ensure it doesn't overflow horizontally */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    background-color: #ffffff; 
+    padding: 5px;
+    border-radius: 8px; 
+    max-width: 100%;
 }
 
 .product-options .option {
-    display: inline-flex; /* Ensures each option stays on a single line */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #333; /* Dark gray text */
+    color: #333; 
     text-decoration: none;
-    font-size: 14px; /* Reduced font size */
-    padding: 8px 12px; /* Adjusted padding */
-    border-radius: 10px; /* Rounded corners */
-    margin-right: 8px; /* Space between options */
+    font-size: 14px;
+    padding: 8px 12px; 
+    border-radius: 10px; 
+    margin-right: 8px; 
     transition: background-color 0.3s, color 0.3s;
-    background-color: #f2f2f2; /* Light gray on hover */
+    background-color: #f2f2f2; 
 
 }
 
 .product-options .option:hover {
-    background-color: #d5cfcf; /* Light gray on hover */
-    color: #282626; /* Dark gray text on hover */
+    background-color: #d5cfcf; 
+    color: #282626; 
 }
 
 .product-options .option:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.75); /* Custom focus outline */
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.75); 
 }
-/* 
-@media screen and (max-width: 600px) {
-    .product-options {
-        flex-wrap: nowrap; 
-    }
-} */
+
 
